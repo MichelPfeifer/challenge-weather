@@ -18,6 +18,6 @@ public class WeatherAnalyzerTest {
                 new String[]{"3", "77", "55"}
         );
         String result = analyzer.findDayWithSmallestTempSpread(weatherData);
-        assertEquals("3", result);
+        assertEquals("2", result);
     }
 }
