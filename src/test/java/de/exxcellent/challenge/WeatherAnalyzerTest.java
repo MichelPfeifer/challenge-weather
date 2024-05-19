@@ -7,9 +7,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This class aims to test the methods of class WeatherAnalyzer
+ */
 public class WeatherAnalyzerTest {
+
+    /**
+     * This test method aims to test if the day with the smallest temperature spread is found by
+     * the method findDayWithSmallestTempSpread.
+     * It tests the difference with custom dataframe and dummy values.
+     */
     @Test
-    public void findWeatherWithSmallestTempSpread(){
+    public void testFindDayWithSmallestTempSpread(){
         WeatherAnalyzer analyzer = new WeatherAnalyzer();
         List<String[]> weatherData = Arrays.asList(
                 new String[]{"Day", "MxT", "MxN"},

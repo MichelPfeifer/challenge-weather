@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class aims to read csv file content.
+ */
 public class CsvReader {
 
     /**

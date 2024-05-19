@@ -7,10 +7,19 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
+/**
+ * This class aims to test the methods of class FootballAnalyzer
+ */
 public class FootballAnalyzerTest {
 
+    /**
+     * This test method aims to test if the team with the smallest goal difference is found by
+     * the method findTeamWithSmallestGoalDifference.
+     * It tests the difference with custom dataframe and dummy values.
+     */
     @Test
-    public void findTeamWithSmallestGoalDifference() {
+    public void testFindTeamWithSmallestGoalDifference() {
         FootballAnalyzer analyzer = new FootballAnalyzer();
         List<String[]> footballData = Arrays.asList(
                 new String[]{"Team", "Games", "Wins", "Losses", "Draws", "Goals", "Goals Allowed", "Points"},

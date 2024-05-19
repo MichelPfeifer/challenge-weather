@@ -7,7 +7,16 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * This class aims to test the methods of class CsvReader
+ */
+
 public class CsvReaderTest {
+    /**
+     * This method tests if the method readCsvFile reads in the weather.csv file correctly
+     * It tests the size of the dataframe and values from different columns and rows.
+     * @throws IOException
+     */
     @Test
     public void testReadCsvWeatherFile() throws IOException {
         CsvReader csvReader = new CsvReader();
@@ -19,6 +28,11 @@ public class CsvReaderTest {
         assertEquals("1", csvData.get(1)[0]);
     }
 
+    /**
+     * This method tests if the method readCsvFile reads in the football.csv file correctly.
+     * It tests the size of the dataframe and values from different columns and rows.
+     * @throws IOException
+     */
     @Test
     public void testReadCsvFootballFile() throws IOException{
         CsvReader csvReader = new CsvReader();

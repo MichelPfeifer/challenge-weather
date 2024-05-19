@@ -20,17 +20,15 @@ public final class App {
         // Create reader
         CsvReader csvReader = new CsvReader();
 
-        // Analyze weather file
+        // Load and analyze weather data
         List<String[]> weatherData = csvReader.readCsvFile("src/main/resources/de/exxcellent/challenge/weather.csv");
         WeatherAnalyzer weatherAnalyzer = new WeatherAnalyzer();
-
         String dayWithSmallestTempSpread = weatherAnalyzer.findDayWithSmallestTempSpread(weatherData);     // Your day analysis function call …
         System.out.printf("Day with smallest temperature spread : %s%n", dayWithSmallestTempSpread);
 
-        // Analyze football data
+        // Load and analyze football data
         List<String[]> footballData = csvReader.readCsvFile("src/main/resources/de/exxcellent/challenge/football.csv");
         FootballAnalyzer footballAnalyzer = new FootballAnalyzer();
-
         String teamWithSmallestGoalSpread = footballAnalyzer.findTeamWithSmallestGoalDifference(footballData); // Your goal analysis function call …
         System.out.printf("Team with smallest goal spread       : %s%n", teamWithSmallestGoalSpread);
     }
