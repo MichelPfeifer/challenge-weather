@@ -1,3 +1,13 @@
+== Description of solution
+The solution to the challenge contains two separate functional tasks implemented in three separate classes.
+The separate functional tasks are 1. reading the CSV file and 2. analyzing the content of the CSV file.
+
+The first task is implemented in the CsvReader class and the second task is implemented in the WeatherAnalyzer and
+FootballAnalyzer classes to separate the two CSV files to be analyzed.
+
+Test classes for the above-mentioned classes are also implemented.
+
+
 = eXXcellent programming challenge
 
 This repository provides the project scaffold for a simple
